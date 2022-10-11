@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/lib/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Cv-Generator</title>
+</head>
+<body>
+    <header></header>
+    <main class="container-fluid">
+
+        <div class="row">
+            <div class="col-6 col-sm-6 col-md-6 offset-3 mt-2 mb-2">
+
+                <div class="card">
+                    <div class="card-header bg-dark text-light"><h4 class="text-center">Cv-Generator</h4L></div>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Completar todas las informaciones</h5>
+                        <div class="card-title h5 mb-3">Informacion Personal</div>
+
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nombre(s):</label>
+                            <input id="name" type="text" class="form-control">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="lastname" class="form-label">Apellido(s):</label>
+                            <input id="lastname" type="text" class="form-control">
+                        </div>
+                        <hr size="5px" color="black">
+
+                        <div class="ard-title h5 mb-3">Contacto</div>
+
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Teléfono:</label>
+                            <input id="phone" type="number"  step="any" class="form-control" placeholder="8291234567">
+                            <!-- <p class="text text-danger" id="PhoneErrorMessage">El telefono no es valido</p> -->
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email:</label>
+                            <input id="email" type="text" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="direction" class="form-label">Dirección:</label>
+                            <input id="direction" type="text" class="form-control">
+                        </div>
+
+                        <hr size="5px" color="black">
+
+                            <div class="ard-title h5 mb-3">Idiomas</div>
+                            <div class="mb-3">
+                                <textarea class="form-control mb2" name="lenguages" id="lenguages" cols="0"
+                                rows="2" placeholder="Escribe tus diferentes idiomas separados por coma."></textarea>
+                            </div>
+
+                            <hr size="5px" color="black">
+
+                            <div class="ard-title h5 mb-3">Acerca de ti</div>
+
+                            <div class="mb-3">
+                                <textarea class="form-control mb2" name="about" id="about" cols="0"
+                                rows="4"></textarea>
+                        </div>
+
+
+                        <hr size="5px" color="black">
+
+                        <div class="ard-title h5 mb-3">Skills/Habilidades</div>
+
+                        <div class="mb-3">
+                                <textarea class="form-control mb2" name="knowledge" id="knowledge" cols="0"
+                                rows="4"></textarea>
+                            </div>
+
+                            <hr size="5px" color="black">
+
+                        <div class="ard-title h5 mb-3">Experiencia</div>
+                        <div class="mb-3">
+                            <textarea class="form-control mb2" name="experience" id="experience" cols="0"
+                            rows="4"></textarea>
+                        </div>
+
+                        <hr size="5px" color="black">
+
+                        <div class="ard-title h5 mb-3">Educación</div>
+                        <div class="mb-3">
+                            <textarea class="form-control mb2" name="education" id="education" cols="0"
+                            rows="4"></textarea>
+                        </div>
+
+                        <hr size="5px" color="black">
+
+                        <div class="ard-title h5 mb-3">Certificación</div>
+                        <div class="mb-3">
+                            <textarea class="form-control mb2" name="certification" id="certification" cols="0"
+                            rows="4"></textarea>
+                        </div>
+
+                        <button onclick="CreateCv()" type="button" class="btn btn-outline-primary float-end">Guardar</button>
+                        <button onclick="Clear()" type="button" class="btn btn-outline-warning float-end me-2">Limpiar</button>    
+                        </div>
+                </div>
+            </div>
+
+        <div class="row" id="Cv-Container">
+
+       <!--  <div class="col-6 col-sm-6 col-md-6 offset-3 mt-2 mb-2">
+                    <div class="card">
+                        <div class="card-header bg-primary text-light">
+                            <h5 class="text-center fw-bold">Curriculum-Vitae</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="card">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Nombre(s):</li>
+                                    <li class="list-group-item">Apellido(s):</li>
+                                    <li class="list-group-item">Teléfono:</li>
+                                    <li class="list-group-item">Email:</li>
+                                    <li class="list-group-item">Dirección:</li>
+                                    <li class="list-group-item">Idiomas:</li>
+                                    <li class="list-group-item">Acerca de ti:</li>
+                                    <li class="list-group-item">Skills/Habilidades:</li>
+                                    <li class="list-group-item">Experiencia:</li>
+                                    <li class="list-group-item">Educación:</li>
+                                    <li class="list-group-item">Certificación:</li>
+
+                                </ul>
+                            </div>
+
+                            <button type="button" class="btn btn-outline-danger float-end mt-2">Eliminar</button>
+
+                        </div>
+                    </div>
+
+                </div> -->
+            </div>
+                        
+                
+
+    </main>
+
+    <footer></footer>
+
+    <script src="assets/js/lib/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/js/site/index/index.js"></script>
+
+
+</body>
+</html>
